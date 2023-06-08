@@ -48,7 +48,7 @@ class DB:
 
     def find_user_by(self, **kwargs) -> User:
         """
-        Find the first user in the database based on the given keyword arguments
+        Find the first user in the db based on the given keyword arguments
         """
         try:
             user = self._session.query(User).filter_by(**kwargs).first()
